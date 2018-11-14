@@ -1,0 +1,124 @@
+/*
+    17343131 许滨楠
+    Homework 5 Game - Maze
+        mazeStyle.css
+    css stylesheet for mazeContent.html
+*/
+
+body {
+    text-align: center;
+    font-size: 16px;
+    font-Family: "Comic Sans MS", "Trebuchet MS", "Hei", sans-serif;
+}
+
+#title {
+    width: 600px;
+    height: 100px;
+    background-image: url("../img/title.png");
+    background-size: 550px 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1 {
+    padding-top: 20px;
+    font-size: 40px;
+}
+
+#infomation {
+    font-size: 20px;
+}
+
+#help {
+    font-size: 26px;
+}
+
+#gameArea {
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: relative;
+}
+
+.wall {
+    position: absolute;
+}
+
+#mazeMap {
+    position: absolute;
+    margin-top: 10px;
+    width: 600px;
+    height: 350px;
+    background-image: url("../img/bg.jpg");
+    background-size: 600px 350px;
+}
+
+#leftT {
+    width: 180px;
+    height: 250px;
+}
+
+#midT {
+    width: 240px;
+    height: 50px;
+    margin-left: 180px;
+}
+
+#rightT {
+    width: 180px;
+    height: 250px;
+    margin-left: 420px;
+}
+
+#bottom {
+    width: 600px;
+    height: 50px;
+    margin-top: 300px;
+}
+
+#midB {
+    width: 140px;
+    height: 200px;
+    margin-top: 100px;
+    margin-left: 230px;
+}
+
+.point {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-top: 250px;
+}
+
+#start {
+    background-image: url("../img/pig.png");
+    background-size: 50px;
+}
+
+#cheatExam {
+    /* background-color: black; */
+    width: 1px;
+    height: 50px;
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 545px;
+}
+
+#end {
+    margin-left: 550px;
+    background-image: url("../img/pizza.png");
+    background-size: 50px 50px;
+}
+
+#object {
+    margin-top: 400px;
+}
+
+#luck {
+    margin-top: -10px;
+    font-size: 30px;
+}

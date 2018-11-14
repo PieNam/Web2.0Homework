@@ -1,0 +1,101 @@
+<!--
+    17343131 许滨楠
+    Homework 5 Game - Whac-a-mole
+        moleContent.html
+    for basic content definition
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Whac-a-mole</title>
+        <link href="../css/moleStyle.css" rel="stylesheet" />
+        <link rel="shortcut icon" type="image/x-icon" href="../img/hammer.png" />
+    </head>
+    <body>
+        <div id="gameArea">
+            <img src="../img/mole.png" id="leftMole" alt="Welcome to Whac-a-mole :)"/>
+            <h1 id="title">Whac-a-mole</h1>
+            <img src="../img/angryMole.png" id="rightMole" alt="Welcome to Whac-a-mole!!!"/>
+            <p id="description">Test your skill. How many boxes(moles) can you check(hit) in 30 seconds?</p>
+            <button id="pp" onclick="press()" title="Click to pause or resume the game."></button>
+            <button id="refresh" onclick="fresh()" title="Click to restart."></button>
+            <input class="info" id="startStop" type="text" value="Start Game | Stop Game">
+            <p class="info" id="timerTxt">Time: </p>
+            <input class="info" id="timer" type="text" value="0">
+            <p class="info" id="timerI">sec(s)</p>
+            <input class="info" id="gameMsg" type="text" value="Game Over">
+            <p class="info" id="scoreTxt">Score: </p>
+            <input class="info" id="score" type="text" value="0">
+            <div id="gameMap">
+                <label class="moleBox" id="61"><input type="radio" name="mole" class="moleButton" value="0" id="1" onclick="hit(1)"></label>
+                <label class="moleBox" id="62"><input type="radio" name="mole" class="moleButton" value="0" id="2" onclick="hit(2)"></label>
+                <label class="moleBox" id="63"><input type="radio" name="mole" class="moleButton" value="0" id="3" onclick="hit(3)"></label>
+                <label class="moleBox" id="64"><input type="radio" name="mole" class="moleButton" value="0" id="4" onclick="hit(4)"></label>
+                <label class="moleBox" id="65"><input type="radio" name="mole" class="moleButton" value="0" id="5" onclick="hit(5)"></label>
+                <label class="moleBox" id="66"><input type="radio" name="mole" class="moleButton" value="0" id="6" onclick="hit(6)"></label>
+                <label class="moleBox" id="67"><input type="radio" name="mole" class="moleButton" value="0" id="7" onclick="hit(7)"></label>
+                <label class="moleBox" id="68"><input type="radio" name="mole" class="moleButton" value="0" id="8" onclick="hit(8)"></label>
+                <label class="moleBox" id="69"><input type="radio" name="mole" class="moleButton" value="0" id="9" onclick="hit(9)"></label>
+                <label class="moleBox" id="70"><input type="radio" name="mole" class="moleButton" value="0" id="10" onclick="hit(10)"></label>
+                <label class="moleBox" id="71"><input type="radio" name="mole" class="moleButton" value="0" id="11" onclick="hit(11)"></label>
+                <label class="moleBox" id="72"><input type="radio" name="mole" class="moleButton" value="0" id="12" onclick="hit(12)"></label>
+                <label class="moleBox" id="73"><input type="radio" name="mole" class="moleButton" value="0" id="13" onclick="hit(13)"></label>
+                <label class="moleBox" id="74"><input type="radio" name="mole" class="moleButton" value="0" id="14" onclick="hit(14)"></label>
+                <label class="moleBox" id="75"><input type="radio" name="mole" class="moleButton" value="0" id="15" onclick="hit(15)"></label>
+                <label class="moleBox" id="76"><input type="radio" name="mole" class="moleButton" value="0" id="16" onclick="hit(16)"></label>
+                <label class="moleBox" id="77"><input type="radio" name="mole" class="moleButton" value="0" id="17" onclick="hit(17)"></label>
+                <label class="moleBox" id="78"><input type="radio" name="mole" class="moleButton" value="0" id="18" onclick="hit(18)"></label>
+                <label class="moleBox" id="79"><input type="radio" name="mole" class="moleButton" value="0" id="19" onclick="hit(19)"></label>
+                <label class="moleBox" id="80"><input type="radio" name="mole" class="moleButton" value="0" id="20" onclick="hit(20)"></label>
+                <label class="moleBox" id="81"><input type="radio" name="mole" class="moleButton" value="0" id="21" onclick="hit(21)"></label>
+                <label class="moleBox" id="82"><input type="radio" name="mole" class="moleButton" value="0" id="22" onclick="hit(22)"></label>
+                <label class="moleBox" id="83"><input type="radio" name="mole" class="moleButton" value="0" id="23" onclick="hit(23)"></label>
+                <label class="moleBox" id="84"><input type="radio" name="mole" class="moleButton" value="0" id="24" onclick="hit(24)"></label>
+                <label class="moleBox" id="85"><input type="radio" name="mole" class="moleButton" value="0" id="25" onclick="hit(25)"></label>
+                <label class="moleBox" id="86"><input type="radio" name="mole" class="moleButton" value="0" id="26" onclick="hit(26)"></label>
+                <label class="moleBox" id="87"><input type="radio" name="mole" class="moleButton" value="0" id="27" onclick="hit(27)"></label>
+                <label class="moleBox" id="88"><input type="radio" name="mole" class="moleButton" value="0" id="28" onclick="hit(28)"></label>
+                <label class="moleBox" id="89"><input type="radio" name="mole" class="moleButton" value="0" id="29" onclick="hit(29)"></label>
+                <label class="moleBox" id="90"><input type="radio" name="mole" class="moleButton" value="0" id="30" onclick="hit(30)"></label>
+                <label class="moleBox" id="91"><input type="radio" name="mole" class="moleButton" value="0" id="31" onclick="hit(31)"></label>
+                <label class="moleBox" id="92"><input type="radio" name="mole" class="moleButton" value="0" id="32" onclick="hit(32)"></label>
+                <label class="moleBox" id="93"><input type="radio" name="mole" class="moleButton" value="0" id="33" onclick="hit(33)"></label>
+                <label class="moleBox" id="94"><input type="radio" name="mole" class="moleButton" value="0" id="34" onclick="hit(34)"></label>
+                <label class="moleBox" id="95"><input type="radio" name="mole" class="moleButton" value="0" id="35" onclick="hit(35)"></label>
+                <label class="moleBox" id="96"><input type="radio" name="mole" class="moleButton" value="0" id="36" onclick="hit(36)"></label>
+                <label class="moleBox" id="97"><input type="radio" name="mole" class="moleButton" value="0" id="37" onclick="hit(37)"></label>
+                <label class="moleBox" id="98"><input type="radio" name="mole" class="moleButton" value="0" id="38" onclick="hit(38)"></label>
+                <label class="moleBox" id="99"><input type="radio" name="mole" class="moleButton" value="0" id="39" onclick="hit(39)"></label>
+                <label class="moleBox" id="100"><input type="radio" name="mole" class="moleButton" value="0" id="40" onclick="hit(40)"></label>
+                <label class="moleBox" id="101"><input type="radio" name="mole" class="moleButton" value="0" id="41" onclick="hit(41)"></label>
+                <label class="moleBox" id="102"><input type="radio" name="mole" class="moleButton" value="0" id="42" onclick="hit(42)"></label>
+                <label class="moleBox" id="103"><input type="radio" name="mole" class="moleButton" value="0" id="43" onclick="hit(43)"></label>
+                <label class="moleBox" id="104"><input type="radio" name="mole" class="moleButton" value="0" id="44" onclick="hit(44)"></label>
+                <label class="moleBox" id="105"><input type="radio" name="mole" class="moleButton" value="0" id="45" onclick="hit(45)"></label>
+                <label class="moleBox" id="106"><input type="radio" name="mole" class="moleButton" value="0" id="46" onclick="hit(46)"></label>
+                <label class="moleBox" id="107"><input type="radio" name="mole" class="moleButton" value="0" id="47" onclick="hit(47)"></label>
+                <label class="moleBox" id="108"><input type="radio" name="mole" class="moleButton" value="0" id="48" onclick="hit(48)"></label>
+                <label class="moleBox" id="109"><input type="radio" name="mole" class="moleButton" value="0" id="49" onclick="hit(49)"></label>
+                <label class="moleBox" id="110"><input type="radio" name="mole" class="moleButton" value="0" id="50" onclick="hit(50)"></label>
+                <label class="moleBox" id="111"><input type="radio" name="mole" class="moleButton" value="0" id="51" onclick="hit(51)"></label>
+                <label class="moleBox" id="112"><input type="radio" name="mole" class="moleButton" value="0" id="52" onclick="hit(52)"></label>
+                <label class="moleBox" id="113"><input type="radio" name="mole" class="moleButton" value="0" id="53" onclick="hit(53)"></label>
+                <label class="moleBox" id="114"><input type="radio" name="mole" class="moleButton" value="0" id="54" onclick="hit(54)"></label>
+                <label class="moleBox" id="115"><input type="radio" name="mole" class="moleButton" value="0" id="55" onclick="hit(55)"></label>
+                <label class="moleBox" id="116"><input type="radio" name="mole" class="moleButton" value="0" id="56" onclick="hit(56)"></label>
+                <label class="moleBox" id="117"><input type="radio" name="mole" class="moleButton" value="0" id="57" onclick="hit(57)"></label>
+                <label class="moleBox" id="118"><input type="radio" name="mole" class="moleButton" value="0" id="58" onclick="hit(58)"></label>
+                <label class="moleBox" id="119"><input type="radio" name="mole" class="moleButton" value="0" id="59" onclick="hit(59)"></label>
+                <label class="moleBox" id="120"><input type="radio" name="mole" class="moleButton" value="0" id="60" onclick="hit(60)"></label>
+            </div>
+        </div>
+        <div id="instructions">
+            <h2>Instructions: </h2>
+            <p class="rules">1. Click on the radio buttons(moles) as they are selected randomly by the computer.</p>
+            <p class="rules">2. 1 point pet hit, minus 1 point per miss.</p>
+        </div>
+        <script src="../js/moleFunction.js"></script>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!--
+    17343131 许滨楠
+    Homework 5 Game - Maze
+        mazeContent.html
+    for basic content definition
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Mouse Maze</title>
+        <link href="../css/mazeStyle.css" rel="stylesheet" />
+        <link rel="shortcut icon" type="image/x-icon" href="../img/mouse.png" />
+    </head>
+    <body>
+        <div id="gameArea">
+            <div id="title"><h1>The Amazing Mouse Maze!</h1></div>
+            <p class="description" id="help">
+                Help Peppa Pig！ It's in danger and hungry!
+            </p>
+            <p class="description" id="infomation">
+                Move your mouse over Peppa and click it to start.
+            </p>
+            <p class="description" id="extraInfo">
+                Don't cheat, you should start from Peppa and
+                move to the pizza inside the maze!
+            </p>
+            <div id="mazeMap">
+                <div class="wall" id="leftT" onmousemove="fail()"></div>
+                <div class="wall" id="midT" onmousemove="fail()"></div>
+                <div class="wall" id="rightT" onmousemove="fail()"></div>
+                <div class="wall" id="midB" onmousemove="fail()"></div>
+                <div class="wall" id="bottom" onmousemove="fail()"></div>
+                <div class="point" id="start" onclick="startGame()"></div>
+                <div id="cheatExam" onmousemove="notCheat()"></div>
+                <div class="point" id="end" onmousemove="success()"></div>
+            </div>
+            <p id="object">
+                The object of this game is to guide the mouse cursor from
+                Peppa Pig to the pizza. Be sure to avoid the water and the crocodiles.
+                They are hungry too!
+            </p>
+            <p id="luck">Good Luck!</p>
+        </div>
+        <script src="../js/mazeFunction.js"></script>
+    </body>
+</html>

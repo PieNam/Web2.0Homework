@@ -1,0 +1,177 @@
+/*
+    17343131 许滨楠
+    Homework 5 Game - Whac-a-mole
+        moleStyle.css
+    css stylesheet for moleContent.html
+*/
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url("../font/Century\ Gothic.ttf");
+}
+
+body {
+    text-align: center;
+    font-family: 'Century Gothic', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+#leftMole {
+    position: absolute;
+    width: 50px;
+    height:50px;
+    margin-top: -10px;;
+    margin-left: -130px;
+}
+
+#rightMole {
+    position: absolute;
+    width: 50px;
+    height:50px;
+    margin-top: -50px;;
+    margin-left: 80px;
+}
+
+#gameArea {
+    position: relative;
+    width: 600px;
+    height: 320px;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+#pp {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-left: -220px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-image: url("../img/play.png");
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    outline: none;
+}
+
+#pp:active {
+    opacity: 0.6;
+}
+
+#refresh {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-left: -180px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-image: url("../img/refresh.png");
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    outline: none;
+}
+
+#refresh:active {
+    opacity: 0.6;
+}
+
+.info {
+    position: absolute;
+}
+
+#startStop {
+    width: 135px;
+    margin-left: -132px;
+}
+
+#timerTxt {
+    margin-top: 0;
+    margin-left: 348px;
+}
+
+#timer {
+    width: 30px;
+    margin-left: 98px;
+}
+
+#timerI {
+    margin-top: 0;
+    margin-left: 435px;
+}
+
+#gameMsg {
+    width: 135px;
+    margin-top: 20px;
+    margin-left: -132px;
+}
+
+#scoreTxt {
+    margin-top: 20px;
+    margin-left: 348px;
+}
+
+#score {
+    width: 30px;
+    margin-top: 20px;
+    margin-left: 98px;
+}
+
+#gameMap {
+    margin: auto;
+    left: 0;
+    right: 0;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    width: 230px;
+    height: 150px;
+    margin-top: 80px;
+    padding-top: 7px;
+}
+
+.moleBox {
+    /* background-image: url("../img/mole.png"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 21px 21px;
+    width: 10px;
+    height: 10px;
+}
+
+.moleButton {
+    margin-top: 7px;
+    display: none;
+}
+
+#instructions {
+    text-align: left;
+    font-family: "Courier New", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 10px;
+    word-spacing: 0.2em;
+    width: 650px;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+h2 {
+    font-size: 13px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.rules {
+    text-indent: 1em;
+    font-weight: 600;
+    font-size: 11px;
+    margin-left: 0;
+    line-height: 1px;
+}
