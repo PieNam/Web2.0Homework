@@ -1,0 +1,43 @@
+<!--
+    17343131 许滨楠
+    Homework 4 Calculator
+        index.html
+    for basic content definition
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My Calculator</title>
+        <link href="../css/style.css" rel="stylesheet" />
+        <link rel="shortcut icon" type="image/x-icon" href="../img/calculator.png" />
+    </head>
+    <body>
+        <div id="wholeCal">
+            <img id="titlePic" alt="My Calculator" src="../img/title.png">
+            <input type="text" value="0" id="result">
+            <button class="bt func" onclick="clean();">CE</button>
+            <button class="bt func" onclick="command(10);">(</button>
+            <button class="bt func" onclick="command(11);">)</button>
+            <button class="bt opr" onclick="command(-4);">/</button>
+            <button class="bt nums" onclick="command(7);">7</button>
+            <button class="bt nums" onclick="command(8);">8</button>
+            <button class="bt nums" onclick="command(9);">9</button>
+            <button class="bt opr" onclick="command(-3);">*</button>
+            <button class="bt nums" onclick="command(4);">4</button>
+            <button class="bt nums" onclick="command(5);">5</button>
+            <button class="bt nums" onclick="command(6);">6</button>
+            <button class="bt opr" onclick="command(-2);">-</button>
+            <button class="bt nums" onclick="command(1);">1</button>
+            <button class="bt nums" onclick="command(2);">2</button>
+            <button class="bt nums" onclick="command(3);">3</button>
+            <button class="bt opr" onclick="command(-1);">+</button>
+            <button class="bt nums" onclick="command(0);">0</button>
+            <button class="bt nums" onclick="command(-5);">.</button>
+            <button class="bt nums" onclick="del();">←</button>
+            <button class="bt opr" onclick="calc();">=</button>
+        </div>
+        <script src="../js/calculator.js"></script>
+    </body>
+</html>

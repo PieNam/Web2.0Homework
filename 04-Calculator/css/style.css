@@ -1,0 +1,81 @@
+/*
+    17343131 许滨楠
+    Homework 4 Calculator
+        style.css
+    css stylesheet for index.html
+*/
+
+body {
+    text-align: center;
+    font-family: "lucida grande", "lucida sans unicode",
+        lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei",
+        "WenQuanYi Micro Hei", sans-serif;
+}
+
+#wholeCal {
+    height: 700px;
+    width: 400px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-color: #000000;
+}
+
+#titlePic {
+    width: 400px;
+    height: 100px;
+}
+
+#result {
+    margin: 0;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    height: 100px;
+    width: 370px;
+    text-align: right;
+    background-color: transparent;
+    border: none;
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: 200;
+}
+
+.bt {
+    outline: none;
+    color: #FFFFFF;
+    font-size: 30pt;
+    margin-left: 3px;
+    margin-top: 8px;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: none;
+}
+
+.func {
+    color: #000000;
+    background-color: #A5A5A5;
+}
+
+.func:active {
+    background-color: #C8C8C8;
+}
+
+.opr {
+    background-color: #FF9500;
+}
+
+.opr:active {
+    background-color: #ffbe64;
+}
+
+.nums {
+    background-color: #333333;
+}
+
+.nums:active {
+    background-color: gray;
+}
