@@ -1,0 +1,209 @@
+/*
+    17343131 许滨楠
+    Homework 6 Fifteen Puzzle
+        Style.css
+    css stylesheet for FifteenPuzzle.html
+*/
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url("../font/Century\ Gothic.ttf");
+    font-family: 'LCDM2N';
+    src: url("../font/LCDM2N.TTF");
+}
+
+body {
+    background-color: black;
+    font-family: 'Century Gothic', 'Trebuchet MS',
+                 'Lucida Sans Unicode', 'Lucida Grande',
+                 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    transition: 2s;
+    padding: 0;
+}
+
+#finish {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin-left: -350px;
+    margin-top: 200px;
+    transition: 2s;
+}
+#finishText {
+    font-size: 25px;
+    opacity: 0;
+    transition: 2s;
+}
+
+#mid {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    /* background-color: lightgrey; */
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+#picMap {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: grey;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+#orgPic {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    /* background-color: grey; */
+    margin-top: 50px;
+    margin-left: 600px;
+    background-image: url("../img/image.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#sand {
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 245px;
+    width: 60px;
+    height: 60px;
+}
+.rotate {
+    animation: run 2s linear infinite;
+    -webkit-animation:run 2s linear infinite;
+}
+@keyframes run {
+    from{     
+        -webkit-transform:rotate(0deg);     
+    }     
+    to{     
+        -webkit-transform:rotate(360deg);     
+    }
+}
+
+#timer {
+    position: absolute;
+    margin-top: 420px;
+    margin-left: 605px;
+    font-size: 35px;
+    font-family: 'LCDM2N';
+}
+
+#start {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    margin-top: 650px;
+    width: 100px;
+    height: 50px;
+    outline: none;
+    color: white;
+    font-size: 30px;
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 25px;
+    transition: all 0.5s;
+}
+#start:hover {
+    color: #557EAC;
+    border: 3px solid #557EAC;
+}
+#start:active {
+    color: #04190D;
+    border: 3px solid #04190D;
+}
+
+.block {
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    /* background-color: white; */
+    background-image: url("../img/image.jpg");
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+}
+.block:hover {
+    box-shadow: 3px 3px 3px #333333;
+    transform: scale(1.05);
+}
+
+#block0 {
+    margin: 0 0 0 0;
+    background-position: 0px 0px;
+}
+#block1 {
+    margin: 0 0 0 125px;
+    /* margin-left: 125px;
+    margin-top: 0; */
+    background-position: -125px 0px;
+}
+#block2{
+    margin: 0 0 0 250px;
+    background-position: -250px 0px;
+}
+#block3 {
+    margin: 0 0 0 375px;
+    background-position: -375px 0px;
+}
+#block4{
+    margin: 125px 0 0 0;
+    background-position: 0px -125px;
+}
+#block5 {
+    margin: 125px 0 0 125px;
+    background-position: -125px -125px;
+}
+#block6 {
+    margin: 125px 0 0 250px;
+    background-position: -250px -125px;
+}
+#block7 {
+    margin: 125px 0 0 375px;
+    background-position: -375px -125px;
+}
+#block8 {
+    margin: 250px 0 0 0;
+    background-position: 0px -250px;
+}
+#block9 {
+    margin: 250px 0 0 125px;
+    background-position: -125px -250px;
+}
+#block10 {
+    margin: 250px 0 0 250px;
+    background-position: -250px -250px;
+}
+#block11 {
+    margin: 250px 0 0 375px;
+    background-position: -375px -250px;
+}
+#block12 {
+    margin: 375px 0 0 0;
+    background-position: 0px -375px;
+}
+#block13 {
+    margin: 375px 0 0 125px;
+    background-position: -125px -375px;
+}
+#block14 {
+    margin: 375px 0 0 250px;
+    background-position: -250px -375px;
+}
+#block15 {
+    margin: 375px 0 0 375px;
+    background-position: -375px -375px;
+}

@@ -1,0 +1,46 @@
+<!--
+    17343131 许滨楠
+    Homework 6 Fifteen Puzzle
+        FifteenPuzzle.html
+    for basic content definition
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Fifteen Puzzle - Leslie</title>
+        <link href="../css/Style.css" rel="stylesheet" />
+        <link rel="shortcut icon" type="imag/x-icon" href="../img/puzzle.png" />
+    </head>
+    <body>
+        <div id="mid">
+            <h1>Fifteen Puzzle</h1>
+            <img src="../img/finish.png" id="finish" />
+            <p id="finishText">You've finish the puzzle! Well done~</p>
+            <img src="../img/timing.png" id="sand" />
+            <p id="timer">00:00:00</p>
+            <div id="picMap">
+                <div class="block" id="block0" onclick="move(0)"></div>
+                <div class="block" id="block1" onclick="move(1)"></div>
+                <div class="block" id="block2" onclick="move(2)"></div>
+                <div class="block" id="block3" onclick="move(3)"></div>
+                <div class="block" id="block4" onclick="move(4)"></div>
+                <div class="block" id="block5" onclick="move(5)"></div>
+                <div class="block" id="block6" onclick="move(6)"></div>
+                <div class="block" id="block7" onclick="move(7)"></div>
+                <div class="block" id="block8" onclick="move(8)"></div>
+                <div class="block" id="block9" onclick="move(9)"></div>
+                <div class="block" id="block10" onclick="move(10)"></div>
+                <div class="block" id="block11" onclick="move(11)"></div>
+                <div class="block" id="block12" onclick="move(12)"></div>
+                <div class="block" id="block13" onclick="move(13)"></div>
+                <div class="block" id="block14" onclick="move(14)"></div>
+                <div class="block" id="block15" onclick="move(15)"></div>
+            </div>
+            <div id="orgPic"></div>
+            <button id="start">Go!</button>
+        </div>
+        <script src="../js/Puzzle.js"></script>
+    </body>
+</html> 
