@@ -1,0 +1,125 @@
+/*
+17343131 许滨楠
+Homework 2 Movie Review
+css style for tmnt.html
+*/
+
+body {
+    background-image: url(../img/background.png);
+    background-attachment: fixed;
+    font-size: 8pt;
+    font-family: Verdana, Tahoma, sans-serif;
+    margin: 0;
+}
+
+#banner {
+    background-image: url(../img/bannerbackground.png);
+    background-repeat: repeat-x;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24pt;
+    font-family: Tahoma, Verdana, sans-serif;
+    text-align: center;
+}
+
+#content {
+    width: 800px;
+    margin: 0 auto;
+    border: 4px solid gray;
+    overflow: hidden;
+    position: relative;
+}
+
+#rightColumn {
+    width: 250px;
+    float: right;
+    padding: 0;
+    background-color: #A2B964;
+    font-family: Arial, sans-serif;
+}
+
+#info {
+    padding-left: 10px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+}
+#info .firstInfoTitle {
+    font-weight: bold;
+}
+#info .infoTitle {
+    padding-top: 1em;
+    font-weight: bold;
+}
+
+#leftColumn {
+    width: 550px;
+    float: left;
+}
+
+#rate {
+    background-image: url(../img/rottenbackground.png);
+    background-repeat: repeat-x;
+    height: 83px;
+    color: white;
+}
+#rate img {
+    vertical-align: bottom;
+}
+
+#red {
+    font-size: 48pt;
+    color: red;
+    font-weight: bold;
+}
+
+#leftReview {
+    float: left;
+    width: 47%;
+    margin-left: 2%;
+}
+
+#rightReview {
+    float: right;
+    width: 47%;
+    margin-right: 2%;
+}
+
+.quote {
+    font-weight: bold;
+    background-color: #E1D697;
+    border: 2px solid gray;
+    padding: 8px;
+    overflow: hidden;
+}
+.quote img {
+    float: left;
+    padding-right: 5px;
+}
+
+.reviewer {
+    margin-bottom: 3em;
+}
+.criticIcon {
+    float: left;
+    padding-right: 5px;
+}
+.publication {
+    font-style: italic;
+}
+
+#foot {
+    width: 800px;
+    background-color: #A2B964;
+    text-align: center;
+    bottom: 0;
+    position: absolute;
+    line-height: 5px;
+}
+
+#validIcon{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
