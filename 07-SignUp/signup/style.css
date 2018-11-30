@@ -1,0 +1,227 @@
+body {
+    font-family: 'STXihei', 'PingFang SC','Microsoft YaHei','SimSun','Arial', sans-serif;
+}
+
+#whole {
+    position: absolute;
+    width: 800px;
+    height: 600px;
+    /* background-color: lightgrey; */
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    border: solid 1px lightgrey;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px lightgray;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    color: #555555;
+}
+
+.allElement {
+    position: absolute;
+}
+
+.tag {
+    font-size: 24px;
+    color: transparent;
+    margin-left: 200px;
+}
+
+.window {
+    width: 400px;
+    height: 30px;
+    margin-left: 200px;
+    background: transparent;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    border-bottom: solid 1px lightgrey;
+    transition: all 0.5s;
+}
+
+#usernameTag {
+    margin-top: 42px;
+    transition: all 0.5s;
+}
+#username {
+    margin-top: 40px;
+}
+#username:focus + #usernameTag {
+    margin-top: 10px;
+    font-size: 25px;
+    color: skyblue;
+}
+#username:focus {
+    border-bottom: solid 1px skyblue;
+}
+
+
+#sidTag {
+    margin-top: 122px;
+    transition: all 0.5s;
+}
+#sid {
+    margin-top: 120px;
+
+}
+#sid:focus + #sidTag {
+    margin-top: 90px;
+    font-size: 25px;
+    color: skyblue;
+}
+#sid:focus {
+    border-bottom: solid 1px skyblue;
+}
+
+#phoneTag {
+    margin-top: 202px;
+    transition: all 0.5s;
+}
+#phone {
+    margin-top: 200px;
+
+}
+#phone:focus + #phoneTag {
+    margin-top: 170px;
+    font-size: 25px;
+    color: skyblue;
+}
+#phone:focus {
+    border-bottom: solid 1px skyblue;
+}
+
+#emailTag {
+    margin-top: 282px;
+    transition: all 0.5s;
+}
+#email {
+    margin-top: 280px;
+
+}
+#email:focus + #emailTag {
+    margin-top: 250px;
+    font-size: 25px;
+    color: skyblue;
+}
+#email:focus {
+    border-bottom: solid 1px skyblue;
+}
+
+#resetBtn {
+    margin-top: px;
+
+}
+
+#submitBtn {
+    margin-top: px;
+
+}
+
+
+
+.detailTag {
+    position: absolute;
+    font-size: 30px;
+    color: gray;
+    border-bottom: solid 1px lightgrey;
+}
+
+.detailContent {
+    position: absolute;
+    font-size: 30px;
+    color: gray;
+    margin-left: 400px;
+    border-bottom: solid 1px skyblue;
+}
+
+#usernameDetailTag {
+    margin-left: 220px;
+    margin-top: 50px;
+}
+
+#sidDetailTag {
+    margin-left: 227px;
+    margin-top: 130px;
+}
+
+#phoneDetailTag {
+    margin-left: 274px;
+    margin-top: 210px;
+}
+
+#emailDetailTag {
+    margin-left: 290px;
+    margin-top: 290px;
+}
+
+#usernameDetail {
+    margin-top: 50px;
+}
+
+#sidDetail {
+    margin-top: 130px;
+}
+
+#phoneDetail {
+    margin-top: 210px;
+}
+
+#emailDetail {
+    margin-top: 290px;
+}
+
+
+
+.BTN {
+    margin-top: 370px;
+    font-size: 25px;
+    color: grey;
+    width: 100px;
+    height: 30px;
+    border: none;
+    outline: none;
+}
+#submitBtn {
+    margin-left: 420px;
+    border-bottom: solid 1px lightgreen;
+}
+#resetBtn {
+    margin-left: 280px;
+    border-bottom: solid 1px rgb(200, 88, 88);
+}
+
+
+
+.validationError {
+    position: absolute;
+    margin-left: 200px;
+    color: red;
+    font-size: 0.7em;
+}
+#usernameError {
+    margin-top: 75px;
+}
+#sidError {
+    margin-top: 155px;
+}
+#phoneError {
+    margin-top: 235px;
+}
+#emailError {
+    margin-top: 315px;
+}
+
+#uniqueError {
+    position: absolute;
+    margin-top: -38px;;
+    margin-left: 260px;
+    color: red;
+    font-size: 0.8em;
+}

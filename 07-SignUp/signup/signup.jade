@@ -1,0 +1,40 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        title Register
+        link(rel='stylesheet' type='text/css' href='style.css')
+        script(type='text/javascript' src='https://code.jquery.com/jquery-3.3.1.min.js')
+        script(type='text/javascript' src='validator.js')
+        script(type='text/javascript' src='signup.js')
+
+    body
+        div(id='whole')
+            h1 Account Register
+            form(method='post')
+                if error
+                    div(id='uniqueError').error!= error
+                div.username
+                    input(id='username' name='username' value=user.username class='allElement window' placeholder='Username')
+                    label(id='usernameTag' for='username' class='allElement tag') Username
+                    span(id='usernameError' class='validationError').error
+
+                div.sid
+                    input(id='sid' name='sid' value=user.sid class='allElement window' placeholder='StudentID')
+                    label(id='sidTag' for='sid' class='allElement tag') StudentID
+                    span(id='sidError' class='validationError').error
+                    
+                div.phone
+                    input(id='phone' name='phone' value=user.phone class='allElement window' placeholder='Phone')
+                    label(id='phoneTag' for='phone' class='allElement tag') Phone
+                    span(id='phoneError' class='validationError').error
+                    
+                div.email
+                    input(id='email' name='email' value=user.email class='allElement window' placeholder='Email')
+                    label(id='emailTag' for='email' class='allElement tag') Email
+                    span(id='emailError' class='validationError').error
+                    
+                div.buttons
+                    input.button.submit(id='submitBtn' type='submit' value='Submit' class='allElement BTN')
+                    input.button.reset(id='resetBtn' type='reset' value='Clear' class='allElement BTN')
+        script(src='animation.js')
