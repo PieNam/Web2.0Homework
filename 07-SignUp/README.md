@@ -1,7 +1,5 @@
 # SignUp
 
----
-
 ## 运行检测方式
 
 0.请确保已安装过node.js，且npm安装过Jade、http、url、fs、querystring等工具包
