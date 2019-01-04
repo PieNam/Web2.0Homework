@@ -1,0 +1,45 @@
+extends layout
+
+block content
+	div(class='whole' id='signUpWhole')
+		h1 Account Sign Up
+		form(method='post')
+			if error
+				div(id='uniqueError').error.server!= error
+			div.username
+				input(id='username' name='username' value=user.username class='allElement window' placeholder='Username')
+				label(id='usernameTag' for='username' class='allElement tag') Username
+				span(id='usernameError' class='validationError').error
+
+			div.password
+				input(id='password' name='password' value=user.password class='allElement window' type='password' placeholder='Password')
+				label(id='passwordTag' for='password' class='allElement tag') Password
+				span(id='passwordError' class='validationError').error
+
+			div.confirmPassword
+				input(id='confirmPassword' name='confirmPassword' value=user.confirmPassword class='allElement window' type='password' placeholder='Confirm Password')
+				label(id='confirmPasswordTag' for='confirmPassword' class='allElement tag') Confirm Password
+				span(id='confirmPasswordError' class='validationError').error
+
+			div.sid
+				input(id='sid' name='sid' value=user.sid class='allElement window' placeholder='StudentID')
+				label(id='sidTag' for='sid' class='allElement tag') StudentID
+				span(id='sidError' class='validationError').error
+					
+			div.phone
+				input(id='phone' name='phone' value=user.phone class='allElement window' placeholder='Phone')
+				label(id='phoneTag' for='phone' class='allElement tag') Phone
+				span(id='phoneError' class='validationError').error
+					
+			div.email
+				input(id='email' name='email' value=user.email class='allElement window' placeholder='Email')
+				label(id='emailTag' for='email' class='allElement tag') Email
+				span(id='emailError' class='validationError').error
+					
+			div.buttons
+				input.button.submit(id='submitBtn' type='submit' value='Submit' class='allElement BTN')
+				input.button.reset(id='resetBtn' type='reset' value='Clear' class='allElement BTN')
+				a(class='jump' id='upjump' href='/signin') Sign In
+	script(type='text/javascript' src='/javascripts/jQuery/jquery-3.3.1.js')
+	script(type='text/javascript' src='/javascripts/validator.js')
+	script(type='text/javascript' src='/javascripts/signup.js')

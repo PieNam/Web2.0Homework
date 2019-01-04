@@ -1,0 +1,22 @@
+extends layout
+
+block content
+	div(class='whole' id='signInWhole')
+		h1 Account Sign In
+		form(method='post')
+			if error
+				div(id='uniqueError').error.server!= error
+			div.username
+				input(id='username' name='username' class='allElement window' placeholder='Username')
+				label(id='usernameTag' for='username' class='allElement tag') Username
+				span(id='usernameError' class='validationError').error
+
+			div.password
+				input(id='password' name='password' class='allElement window' type='password' placeholder='Password')
+				label(id='passwordTag' for='password' class='allElement tag') Password
+				span(id='passwordError' class='validationError').error
+
+			div.buttons
+				input.button.submit(id='submitBtn' type='submit' value='Sign In' class='allElement BTN signInBtns')
+				input.button.reset(id='resetBtn' type='reset' value='Clear' class='allElement BTN signInBtns')
+				a(class='jump' id='injump' href='/regist') Sign Up

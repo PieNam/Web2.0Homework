@@ -1,0 +1,281 @@
+body {
+  font-family: 'STXihei', 'PingFang SC','Microsoft YaHei','SimSun','Arial', sans-serif;
+}
+
+.whole {
+  position: absolute;
+  width: 800px;
+  /* background-color: lightgrey; */
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  border: solid 1px lightgrey;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px lightgray;
+}
+#signUpWhole {
+  height: 800px;
+}
+#detailWhole {
+  height: 600px;
+}
+#signInWhole {
+  height: 500px;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+  color: #555555;
+}
+
+.allElement {
+  position: absolute;
+}
+
+.tag {
+  font-size: 24px;
+  color: transparent;
+  margin-left: 200px;
+  transition: all 0.5s;
+}
+
+.window {
+  width: 400px;
+  height: 30px;
+  margin-left: 200px;
+  background: transparent;
+  font-size: 25px;
+  border: none;
+  outline: none;
+  border-bottom: solid 1px lightgrey;
+}
+
+#usernameTag {
+  margin-top: 42px;
+}
+#username {
+  margin-top: 40px;
+}
+#username:focus + #usernameTag {
+  margin-top: 15px;
+  font-size: 25px;
+  color: skyblue;
+}
+#username:focus {
+  border-bottom: solid 1px skyblue;
+}
+
+#passwordTag {
+  margin-top: 122px;
+}
+#password {
+  margin-top: 120px;
+}
+#password:focus + #passwordTag {
+  margin-top: 95px;
+  font-size: 25px;
+  color: skyblue;
+}
+#password:focus {
+  border-bottom: solid 1px skyblue;
+}
+
+#confirmPasswordTag {
+  margin-top: 202px;
+}
+#confirmPassword {
+  margin-top: 200px;
+}
+#confirmPassword:focus + #confirmPasswordTag {
+  margin-top: 175px;
+  font-size: 25px;
+  color: skyblue;
+}
+#confirmPassword:focus {
+  border-bottom: solid 1px skyblue;
+}
+
+#sidTag {
+  margin-top: 282px;
+}
+#sid {
+  margin-top: 280px;
+}
+#sid:focus + #sidTag {
+  margin-top: 255px;
+  font-size: 25px;
+  color: skyblue;
+}
+#sid:focus {
+  border-bottom: solid 1px skyblue;
+}
+
+#phoneTag {
+  margin-top: 362px;
+}
+#phone {
+  margin-top: 360px;
+}
+#phone:focus + #phoneTag {
+  margin-top: 335px;
+  font-size: 25px;
+  color: skyblue;
+}
+#phone:focus {
+  border-bottom: solid 1px skyblue;
+}
+
+#emailTag {
+  margin-top: 442px;
+}
+#email {
+  margin-top: 440px;
+}
+#email:focus + #emailTag {
+  margin-top: 415px;
+  font-size: 25px;
+  color: skyblue;
+}
+#email:focus {
+  border-bottom: solid 1px skyblue;
+}
+
+.BTN {
+  margin-top: 550px;
+  font-size: 25px;
+  color: grey;
+  width: 100px;
+  height: 30px;
+  border: none;
+  outline: none;
+}
+#submitBtn {
+  margin-left: 500px;
+  border-bottom: solid 1px lightgreen;
+}
+#resetBtn {
+  margin-left: 360px;
+  border-bottom: solid 1px rgb(200, 88, 88);
+}
+.signInBtns {
+  margin-top: 250px !important;
+}
+
+.jump {
+  position: absolute;
+  margin-left: 220px;
+  font-size: 25px;
+  color: grey;
+  width: 100px;
+  height: 30px;
+  border-bottom: solid 2px skyblue;
+  text-decoration: none;
+}
+#injump {
+  margin-top: 250px;
+}
+#upjump {
+  margin-top: 550px;
+}
+#logout {
+  position: absolute;
+  margin-top: 360px;
+  margin-left: 300px;
+  font-size: 25px;
+  color: grey;
+  width: 150px;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-bottom: solid 1px rgb(200, 88, 88);
+}
+
+.detailTag {
+  position: absolute;
+  font-size: 30px;
+  color: gray;
+  border-bottom: solid 1px lightgrey;
+}
+
+.detailContent {
+  position: absolute;
+  font-size: 30px;
+  color: gray;
+  margin-left: 400px;
+  border-bottom: solid 1px skyblue;
+}
+
+#usernameDetailTag {
+  margin-left: 220px;
+  margin-top: 50px;
+}
+
+#sidDetailTag {
+  margin-left: 220px;
+  margin-top: 130px;
+}
+
+#phoneDetailTag {
+  margin-left: 220px;
+  margin-top: 210px;
+}
+
+#emailDetailTag {
+  margin-left: 220px;
+  margin-top: 290px;
+}
+
+#usernameDetail {
+  margin-top: 50px;
+}
+
+#sidDetail {
+  margin-top: 130px;
+}
+
+#phoneDetail {
+  margin-top: 210px;
+}
+
+#emailDetail {
+  margin-top: 290px;
+}
+
+
+
+.validationError {
+  position: absolute;
+  margin-left: 200px;
+  color: red;
+  font-size: 0.7em;
+}
+#usernameError {
+  margin-top: 75px;
+}
+#passwordError {
+  margin-top: 155px;
+}
+#confirmPasswordError {
+  margin-top: 235px;
+}
+#sidError {
+  margin-top: 315px;
+}
+#phoneError {
+  margin-top: 395px;
+}
+#emailError {
+  margin-top: 475px;
+}
+
+#uniqueError {
+  position: absolute;
+  margin-top: -38px;;
+  margin-left: 260px;
+  color: red;
+  font-size: 0.8em;
+}

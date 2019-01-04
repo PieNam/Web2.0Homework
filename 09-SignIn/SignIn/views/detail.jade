@@ -1,0 +1,19 @@
+extends layout
+
+block content
+	div(class='whole' id='detailWhole')
+		h1 User Detail
+
+		p(id='usernameDetailTag' class='detailTag') Username
+		span(id='usernameDetail' class='detailContent') #{user.username}
+
+		p(id='sidDetailTag' class='detailTag') StudentID
+		span(id='sidDetail' class='detailContent') #{user.sid}
+		
+		p(id='phoneDetailTag' class='detailTag') Phone
+		span(id='phoneDetail' class='detailContent') #{user.phone}
+		
+		p(id='emailDetailTag' class='detailTag') Email
+		span(id='emailDetail' class='detailContent') #{user.email}
+		input(type='button' id='logout' value='Login Out')
+	script(type='text/javascript' src='/javascripts/detail.js')
