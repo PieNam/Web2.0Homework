@@ -14,7 +14,7 @@
     "express-session": "^1.15.6",
     "http-errors": "~1.6.2",
     "jade": "~1.11.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.13",
     "mongodb": "^2.2.36",
     "morgan": "~1.9.0",
     "session": "^0.1.0",
