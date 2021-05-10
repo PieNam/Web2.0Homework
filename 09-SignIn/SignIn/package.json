@@ -15,7 +15,7 @@
     "http-errors": "~1.6.2",
     "jade": "~1.11.0",
     "lodash": "^4.17.21",
-    "mongodb": "^2.2.36",
+    "mongodb": "^3.1.13",
     "morgan": "~1.9.0",
     "session": "^0.1.0",
     "session-file-store": "^1.2.0"
